@@ -58,6 +58,7 @@ pruned_vocab = prune_vocabulary(vocab,
 ## Model Validation:
 
 - Model performance was assed using **AUC _(Area Under Curve)_** of the **Receiver Operating Characteristic Curve _(ROC)_**.
+- The `glmnet::auc` function was used to calculate performance values.
 
 | Split | Performance |
 |------ | ------------|
