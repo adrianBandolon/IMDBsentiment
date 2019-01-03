@@ -57,20 +57,12 @@ pruned_vocab = prune_vocabulary(vocab,
 
 ## Model Validation:
 
-\begin{center}
-\begin{tabular}{ r l }
-\hline \hline
- Split & Performance \\
-\hline
-1 & 0.9738 \\
-2 & 0.9728 \\
-3 & 0.9633 \\
-\hline \hline
-\textbf{\textit{Vocab. Size:}} & 3000 \\
-\end{tabular}
-\end{center}
+| Split | Performance |
+|------ | ------------|
+| 1     | 0.9738      |
+| 2     | 0.9728      |
+| 3     | 0.9633      |
 
-\centerline{\textit{\textbf{Table 1.}} Model performance on the different train/test splits.\textbf{\textit{Vocabulary Size = 3000.}}}
 
 ### Future Steps: 
 
