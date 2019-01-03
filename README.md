@@ -49,7 +49,7 @@ default_param <- list(objective = "binary:logistic",
 
     + This vocabulary had punctuations and other non-alpha numeric characters removed. This was done using the `tolower(gsub("[^[:alnum:] ]", " ", all$review))` command.
     + The pre-screening vocabulary is only composed of unigrams (single words. Example: `jackie`) and bigrams (two words connected by `_`. Example: `jackie_chan`).
-    + The Snowball stemmer from the `SnowballC` package was used for stemming. Stemming is a process of transforming words back to their root words. For example, "love", "lovely" and "loving" will all be transformed to the term "love" after stemming. This helps in reducing vocubulary size by eliminating some redundant words[^7].
+    + The Snowball stemmer from the `SnowballC` package was used for stemming. Stemming is a process of transforming words back to their root words. For example, "love", "lovely" and "loving" will all be transformed to the term "love" after stemming. This helps in reducing vocubulary size by eliminating some redundant words.
     + A short list of stop words (n=36)[^3], also from Prof. Liang, were used. The terms in the stop words list are frequently occuring terms in speech that does not carry much meaning. The stop word list was meant to be short as **not** to remove too many words, thereby loosing too much information. The "noisy" terms that is left behind after stop word removal will be removed during screening.
     + The pre-screening vocabulary was further reduced using the `prune_vocabulary` function in `text2vec`.
     
