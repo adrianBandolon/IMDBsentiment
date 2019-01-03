@@ -9,7 +9,7 @@ Data used in this project was provided in `Project4_data.tsv`. The dataset consi
 ## R packages used:
 
 - The `Snowball` stemmer would need to be installed separately.
-
+- `parallel` and `doMC` libraries were used to parallelize computations. Would not be required if using Microsoft R Open.
 ```r
 text2vec
 data.table
