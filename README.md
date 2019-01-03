@@ -2,7 +2,7 @@
 
 ## Background:
 
-We were provided with a dataset made up of IMDB movie reviews. Each review is labeled as positive or negative (coded `0` or `1`). The goal is to build a binary classification model to predict the sentiment (whether positive or negative) of a movie review.
+We were provided with a dataset [(here)](https://piazza.com/class_profile/get_resource/jky28ddlhmu2r8/jofbm31y7jzv9) made up of IMDB movie reviews. Each review is labeled as positive or negative (coded `0` or `1`). The goal is to build a binary classification model to predict the sentiment (whether positive or negative) of a movie review.
 
 Data used in this project was provided in `Project4_data.tsv`. The dataset consists of 50,000 reviews. Each review has 3 columns. The first column `new_id` is the unique identifier for each review. The second column contains the labels (`sentiment`) which are the binary responses (`0` or `1`). Column 3 labeled `review` contains the reviews.
 
