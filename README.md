@@ -6,6 +6,20 @@ We were provided with a dataset made up of IMDB movie reviews. Each review is la
 
 Data used in this project was provided in `Project4_data.tsv`. The dataset consists of 50,000 reviews. Each review has 3 columns. The first column `new_id` is the unique identifier for each review. The second column contains the labels (`sentiment`) which are the binary responses (`0` or `1`). Column 3 labeled `review` contains the reviews.
 
+## R packages used:
+
+- The `Snowball` stemmer would need to be installed separately.
+
+```r
+text2vec
+data.table
+magrittr
+xgboost
+glmnet
+SnowballC
+parallel
+doMC
+```
 ## Model:
 
 - This model takes movie reviews as input. Using the `text2vec` library, a *document term matrix* is created, which is made up of documents and term frequencies within each document. This document term matrix is used as input for model building.
