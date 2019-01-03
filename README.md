@@ -29,7 +29,7 @@ default_param <- list(objective = "binary:logistic",
 - I used Feng Liang's screening method for building the vocabulary.
 
     + This screening method uses a two sample t-test to select the "positive" and "negative" sentiment words from the training set.
-    + The original implementation of this screening test produced a vocabulary of only 2000 words. As more information (i.e. more words in the vocabulary) improves model performance, I decided to increase the vocabulary size to 3000 words to satisfy the $\leq 3000$ word vocabulary size requirement of the project.
+    + The original implementation of this screening test produced a vocabulary of only 2000 words. As more information (i.e. more words in the vocabulary) improves model performance, I decided to increase the vocabulary size to 3000 words to satisfy the <3000 word vocabulary size requirement of the project.
 
 - Prior to screening, a pre-screening vocabulary was built. 
 
@@ -56,6 +56,8 @@ pruned_vocab = prune_vocabulary(vocab,
     + As mentioned earlier, different vocabularies resulted in different model performance. Of the three vocabularies produced from the three training datasets, the vocabulary produced from training set number three produced the best model performance.
 
 ## Model Validation:
+
+- Model performance was assed using **AUC _(Area Under Curve)_** of the **Receiver Operating Characteristic Curve _(ROC)_**.
 
 | Split | Performance |
 |------ | ------------|
